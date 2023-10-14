@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app_flutter/constants/colors.dart';
+import 'package:todo_app_flutter/widgets/home.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,12 +11,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeWidget(),
     );
   }
 }
